@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Figtree:ital,wght@0,300;0,700;1,300&family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Figtree:ital,wght@0,300;0,700;1,300&family=Montserrat:wght@600&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Figtree:ital,wght@0,300;0,700;1,300&family=Montserrat:wght@600&family=Questrial&family=Quicksand:wght@700&display=swap');
+
+*, *::before, *::after {
+ box-sizing: border-box;
+}
+
+body {
+ height: 100vh;
+ font-family: 'Figtree', sans-serif;
+ margin: 0;
+ letter-spacing: 0.5;
+ line-height: 1.5;
+ display: flex;
+ flex-direction: column;
+
+}
+
+.container-navigasi {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 2rem;
+    z-index :100;
+}
+
+header {
+	 border-bottom: 1px solid #bdbdbd;
+	 
+}
+
+.social-container {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+  justify-content: center; /* Pusatkan elemen di dalam container */
+ 
+}
+
+.social-container h1{
+	 text-family: 'Quicksand', sans-serif;
+}
+
+
+.content-container {
+  display: flex; /* Menggunakan flexbox untuk mengatur 2 kolom */
+}
+
+.column {
+  flex: 1; /* Membagi ruang secara merata antara kedua kolom */
+  padding: 70px; /* Atur padding sesuai kebutuhan Anda */
+  box-sizing: border-box; /* Memastikan padding tidak menambah lebar elemen */
+}
+
+
+.profile-image {
+	text-align: center;
+}
+
+.profile-image img { 
+	width: auto;
+	max-width: 50%;
+	max-height: 280px;
+	border-radius: 50%; margin-bottom: 0.4em;
+}
+
+.profile-image h2 {
+	font-family : 'Questrial', 'Figtree', sans-serif;
+	font-size: 30px;
+	font-weight: 40;
+}	
+.profile-image h2 em { 
+	display: block;
+	font-style: normal;
+	font-family: 'Agbalumo', 'Figtree', sans-serif;
+	margin-top: -55px;
+	font-weight: 900;
+	text-decoration: none;
+	font-size: 70px;
+	letter-spacing: -4px; 
+	line-height: 0.8; 
+	text-shadow: 6px -6px 0 #fff;
+	}
+	
+.article {
+	margin: auto;
+	min-width: 770px;
+	}
+	
+.info-list {
+	 list-style: none; /* Hilangkan tanda bullet default pada daftar */
+	 padding: 0; /* Hilangkan padding bawaan pada daftar */
+	}
+
+.info-list li {
+	  margin: 10px 0; /* Atur margin antara item daftar */
+	  display: flex; /* Menggunakan flexbox untuk tata letak yang lebih baik */
+	  align-items: center; /* Pusatkan vertikal teks */
+	}
+
+.info-list li strong {
+	  font-weight: bold; 
+	  margin-right: 10px; /* Memberi ruang di antara label dan nilai */
+	}
+
+.info-list li .info-value {
+	  font-weight: normal; 
+	}
+	
+	footer {
+	  background-color: #333; /* Warna latar belakang footer */
+	  padding: 25px; /* Padding untuk memberi ruang di sekitar konten */
+	  text-align: center; /* Pusatkan teks dalam footer */
+	  color : white;
+	  position: fixed; /* Fixed position to stick to the bottom of the viewport */
+	  left: 0; /* Extend to the left edge of the viewport */
+      right: 0; /* Extend to the right edge of the viewport */
+	  bottom: 0; /* Stick to the bottom of the viewport */
+	}
+	
+	.social-container {
+	  display: flex;
+	  align-items: center; /* Pusatkan vertikal elemen */
+	  justify-content: center;
+	}
+
+	.social-container h3 {
+	  margin: 0; /* Hilangkan margin bawaan h3 */
+	  margin-top: 2px; /* Atur jarak antara teks "Find Me!" dan ikon */
+	}
+
+	.social-container a {
+	  text-decoration: none;
+	  color: white;
+	  font-size: 24px;
+	  margin-bottom:2px;
+	}
+	
+	@media screen and (max-width: 768px) {
+		
+		.container-navigasi {
+			padding: 0 20px;
+			text-align: center;
+			font-size: 16px;
+		}
+		
+		.social-container {
+			border-bottom: 1px solid #bdbdbd
+		}
+		
+		header {
+			margin: 0 20px;
+			 border-bottom: 0px
+		}
+	
+		.content-container {
+	    flex-direction: column;
+	}
+		.profile-image img {
+		        max-width: 100%; /* Make the image take the full width on smaller screens */
+		    }
+			
+	  }
+
+
+
