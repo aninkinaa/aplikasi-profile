@@ -4,9 +4,9 @@ threadsafe: true
 
 handlers:
 - url: /
-  static_files: www/index.html
-  upload: www/index.html
+  static_files: index.html
+  upload: index.html
 
-- url: /(.*)
-  static_files: www/\1
-  upload: www/(.*)
+- url: /assets/style.css
+  static_files: assets/style.css
+  upload: assets/style.css
